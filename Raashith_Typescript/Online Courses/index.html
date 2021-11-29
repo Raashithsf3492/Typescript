@@ -1,0 +1,88 @@
+<html>
+    <head>
+       
+        <title>   Online Courses Page</title>
+        <link rel="stylesheet" href="Style/mystyle.css">
+        <script src="Script/myscript.js"></script>
+    </head>
+    <body>
+        <div id="maindiv">
+            <button type="button" onclick="NewUser()">New User</button>
+            <button type="button" onclick="ExistingUser()">Log in</button>
+        </div>
+
+        <div id="newuser">
+            <div id="user1">
+                <label for="name" id="name">User Name:</label>
+            <input type="text" id="username">
+            <br>
+            </div>
+           <div id="age1">
+            <label for="age" id="age">User Age:</label>
+            <input type="text" id="userage">
+            <br>
+           </div>
+           
+           <div id="mobile1">
+            <label for="mobileno" id="mobileno">User Mobile Number:</label>
+            <input type="tel" id="usermobileno">
+            <br>
+           </div>
+           
+            <button type="button" id="add" onclick="AddUser()">Add</button>
+        </div>
+
+        <div id="login">
+            <div id="log">
+                <label id="userid">User Id:</label>
+                <input type="text" id="userid1">
+                 <br>
+
+                 <button type="button" onclick="Checklogin()">Log in</button>
+
+                 <label id="existuser1"></label>
+                 <br>
+                 <label id="existuser2"></label>
+
+            </div>
+        </div>
+
+        <div id="option">
+             <div>
+                 <button type="button" onclick="CoursesAvailable()">Available courses</button>
+
+                 <button type="button" onclick="EnrolledCourses()">Enrolled courses</button>
+             </div>
+        </div>
+
+        <div id="availcourses">
+            <div>
+                <label for="available">Available Courses</label>
+                <select name="courses" id="courses">
+                    <option value="C#">C#</option>
+                    <option value="HTML">HTMl</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Typescript">Typescript</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="days">Days for the course</label>
+                <input type="number" id = "daycourse">
+            </div>
+            <br>
+            <div>
+               <button type="button" value="" onclick="Enroll()">Enroll</button>
+            </div>
+        </div>
+
+        <div id = "enrolled">
+            <label id="cnamel">Course names :</label>
+            <label id="cname"></label>
+            <br>
+            <label id="dayl">Number Of days required :</label>
+            <label id="dayz"></label>
+        </div>
+    </body>
+</html>
